@@ -1,0 +1,21 @@
+# Credentiale & secrete — NU ajung niciodata pe GitHub
+.env
+.env.*
+ftp-credentials.*
+deploy-secrets.*
+*.local
+
+# Sistem
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+
+# Claude (memorie locala)
+.claude/
+
+# Loguri
+*.log

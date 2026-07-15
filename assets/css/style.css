@@ -1,0 +1,261 @@
+/* ============================================
+   GALAXSSIA — stil de bază
+   Temă: cosmic dark, editorial, cinematic
+   ============================================ */
+
+:root {
+  --bg:        #0a0a14;
+  --bg-soft:   #12121f;
+  --card:      #16162a;
+  --text:      #ececf5;
+  --muted:     #9a9ab3;
+  --accent:    #b89dff;   /* violet-galaxie */
+  --accent-2:  #6ce0d6;   /* teal accent */
+  --border:    rgba(255,255,255,0.08);
+  --radius:    16px;
+  --maxw:      1120px;
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans:  "Inter", system-ui, -apple-system, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ---- fundal stelar ---- */
+.starfield {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(1200px 600px at 75% -10%, rgba(184,157,255,0.18), transparent 60%),
+    radial-gradient(900px 500px at 10% 110%, rgba(108,224,214,0.12), transparent 60%),
+    var(--bg);
+}
+.starfield::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, #fff, transparent),
+    radial-gradient(1px 1px at 70% 60%, #fff, transparent),
+    radial-gradient(1px 1px at 40% 80%, #fff, transparent),
+    radial-gradient(1px 1px at 85% 20%, #fff, transparent),
+    radial-gradient(1px 1px at 55% 45%, #fff, transparent);
+  opacity: 0.35;
+}
+
+/* ---- layout comun ---- */
+.section {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 5.5rem 1.5rem;
+}
+.section-title {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+.section-sub {
+  color: var(--muted);
+  margin-top: 0.6rem;
+  font-size: 1.05rem;
+  max-width: 46ch;
+}
+
+/* ---- header ---- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 1.1rem 1.5rem;
+  backdrop-filter: blur(8px);
+}
+.logo {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+.logo-mark { color: var(--accent); }
+.nav { display: flex; gap: 1.6rem; align-items: center; }
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+.nav a:hover { color: var(--text); }
+.lang-switch {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.25rem 0.7rem;
+  font-size: 0.8rem !important;
+}
+
+/* ---- hero ---- */
+.hero {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 6rem 1.5rem 4rem;
+  text-align: center;
+}
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.75rem;
+  color: var(--accent);
+  margin-bottom: 1.4rem;
+}
+.hero h1 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(2.4rem, 6.5vw, 4.6rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  max-width: 16ch;
+  margin: 0 auto;
+}
+.hero h1 em {
+  font-style: italic;
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.lede {
+  color: var(--muted);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  max-width: 52ch;
+  margin: 1.6rem auto 0;
+}
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2.4rem;
+}
+
+/* ---- butoane ---- */
+.btn {
+  display: inline-block;
+  padding: 0.85rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.98rem;
+  text-decoration: none;
+  transition: transform 0.15s, box-shadow 0.2s, background 0.2s;
+  cursor: pointer;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-primary {
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  color: #0a0a14;
+  box-shadow: 0 8px 30px rgba(184,157,255,0.25);
+}
+.btn-ghost {
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+.btn-ghost:hover { background: rgba(255,255,255,0.04); }
+.btn-lg { padding: 1.1rem 2.2rem; font-size: 1.1rem; }
+
+/* ---- grid servicii ---- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.2rem;
+  margin-top: 3rem;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem 1.6rem;
+  transition: transform 0.2s, border-color 0.2s;
+}
+.card:hover { transform: translateY(-4px); border-color: rgba(184,157,255,0.4); }
+.card-num {
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+}
+.card h3 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 0.6rem 0 0.7rem;
+}
+.card p { color: var(--muted); font-size: 0.98rem; }
+
+/* ---- despre ---- */
+.section-about { background: var(--bg-soft); max-width: none; }
+.about-wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+.section-about p { color: var(--muted); margin-top: 1rem; }
+.section-about strong { color: var(--text); }
+.facts { list-style: none; display: grid; gap: 1.2rem; }
+.facts li {
+  font-size: 1.05rem;
+  color: var(--muted);
+  border-left: 2px solid var(--accent);
+  padding-left: 1rem;
+}
+.facts span {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+  color: var(--text);
+  line-height: 1;
+}
+
+/* ---- contact ---- */
+.section-contact { text-align: center; }
+.section-contact .section-sub { margin: 0.6rem auto 2rem; }
+.socials { margin-top: 1.8rem; display: flex; gap: 1.5rem; justify-content: center; }
+.socials a { color: var(--muted); text-decoration: none; border-bottom: 1px solid transparent; }
+.socials a:hover { color: var(--text); border-color: var(--accent); }
+
+/* ---- footer ---- */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.footer-tag { margin-top: 0.3rem; color: var(--accent); }
+
+/* ---- responsive ---- */
+@media (max-width: 720px) {
+  .about-wrap { grid-template-columns: 1fr; gap: 2rem; }
+  .nav { gap: 1rem; }
+  .nav a:not(.lang-switch) { display: none; }
+  .section { padding: 4rem 1.25rem; }
+}
