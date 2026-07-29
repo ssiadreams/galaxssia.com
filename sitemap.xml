@@ -20,6 +20,7 @@
     <xhtml:link rel="alternate" hreflang="ro" href="https://galaxssia.com/film/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://galaxssia.com/en/film/" />
     <priority>0.8</priority></url>
+  <url><loc>https://galaxssia.com/travel/</loc><priority>0.8</priority></url>
   <url><loc>https://galaxssia.com/blog/</loc><priority>0.7</priority></url>
   <url><loc>https://galaxssia.com/contact/</loc>
     <xhtml:link rel="alternate" hreflang="ro" href="https://galaxssia.com/contact/" />
