@@ -2,6 +2,16 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/founder", "destination": "/despre", "permanent": true },
+    { "source": "/film", "destination": "/despre#portofoliu", "permanent": true },
+    { "source": "/portofoliu", "destination": "/despre#portofoliu", "permanent": true },
+    { "source": "/curs", "destination": "/produse", "permanent": true },
+    { "source": "/travel", "destination": "/servicii#travel", "permanent": true },
+    { "source": "/en/founder", "destination": "/en/about", "permanent": true },
+    { "source": "/en/film", "destination": "/en/about#portfolio", "permanent": true },
+    { "source": "/en/portfolio", "destination": "/en/about#portfolio", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/assets/(.*)",
