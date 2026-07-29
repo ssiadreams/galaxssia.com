@@ -59,8 +59,8 @@ a { color: inherit; }
 }
 .logo .mark { display: none; }
 .site-footer .logo { color: #fff; }
-.logo-img { height: 30px; width: auto; display: block; }
-.site-footer .logo-img { height: 34px; filter: brightness(0) invert(1); }
+.logo-img { height: 22px; width: auto; display: block; }
+.site-footer .logo-img { height: 26px; }
 .portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .main-nav { display: flex; align-items: center; gap: 1.5rem; }
 .main-nav a {
@@ -222,15 +222,16 @@ h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: .4rem; }
 .post h3 a:hover { color: var(--violet); }
 
 /* ---------- Footer ---------- */
-.site-footer { background: var(--ink); color: #cfc8de; padding: 3.5rem 0 2.5rem; }
+.site-footer { background: var(--violet-soft); color: var(--mute); padding: 3.5rem 0 2.5rem; border-top: 1px solid var(--line); }
 .footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 2rem; }
-.site-footer h4 { color: #fff; font-size: .95rem; margin-bottom: .8rem; letter-spacing: .04em; }
-.site-footer a { color: #cfc8de; text-decoration: none; font-size: .95rem; display: block; margin: .35rem 0; }
-.site-footer a:hover { color: #fff; }
-.footer-brand .logo { color: #fff; margin-bottom: .6rem; }
-.footer-brand p { color: #9c93b3; font-size: .92rem; max-width: 34ch; }
-.footer-bottom { border-top: 1px solid rgba(255,255,255,.1); margin-top: 2.5rem; padding-top: 1.5rem;
-  display: flex; justify-content: space-between; flex-wrap: wrap; gap: .6rem; color: #9c93b3; font-size: .85rem; }
+.site-footer h4 { color: var(--ink); font-size: .95rem; margin-bottom: .8rem; letter-spacing: .04em; }
+.site-footer a { color: var(--mute); text-decoration: none; font-size: .95rem; display: block; margin: .35rem 0; }
+.site-footer a:hover { color: var(--ink); }
+.footer-brand { margin-bottom: .2rem; }
+.footer-brand .logo-img { margin-bottom: .8rem; }
+.footer-brand p { color: var(--mute); font-size: .92rem; max-width: 34ch; }
+.footer-bottom { border-top: 1px solid var(--line); margin-top: 2.5rem; padding-top: 1.5rem;
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: .6rem; color: var(--mute); font-size: .85rem; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
