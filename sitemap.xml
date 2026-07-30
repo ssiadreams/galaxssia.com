@@ -1,27 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://galaxssia.com/</loc>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://galaxssia.com/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://galaxssia.com/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://galaxssia.com/" />
-    <priority>1.0</priority></url>
-  <url><loc>https://galaxssia.com/despre/</loc>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://galaxssia.com/despre/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://galaxssia.com/en/about/" />
-    <priority>0.9</priority></url>
-  <url><loc>https://galaxssia.com/servicii/</loc>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://galaxssia.com/servicii/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://galaxssia.com/en/services/" />
-    <priority>0.9</priority></url>
-  <url><loc>https://galaxssia.com/produse/</loc><priority>0.9</priority></url>
-  <url><loc>https://galaxssia.com/blog/</loc><priority>0.7</priority></url>
-  <url><loc>https://galaxssia.com/contact/</loc>
-    <xhtml:link rel="alternate" hreflang="ro" href="https://galaxssia.com/contact/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://galaxssia.com/en/contact/" />
-    <priority>0.8</priority></url>
-  <url><loc>https://galaxssia.com/en/</loc><priority>0.8</priority></url>
-  <url><loc>https://galaxssia.com/en/about/</loc><priority>0.6</priority></url>
-  <url><loc>https://galaxssia.com/en/services/</loc><priority>0.6</priority></url>
-  <url><loc>https://galaxssia.com/en/contact/</loc><priority>0.6</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://galaxssia.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://galaxssia.com/studio/</loc><priority>0.9</priority></url>
+  <url><loc>https://galaxssia.com/journeys/</loc><priority>0.9</priority></url>
+  <url><loc>https://galaxssia.com/shop/</loc><priority>0.9</priority></url>
+  <url><loc>https://galaxssia.com/storyteller/</loc><priority>0.9</priority></url>
+  <url><loc>https://galaxssia.com/journal/</loc><priority>0.7</priority></url>
+  <url><loc>https://galaxssia.com/contact/</loc><priority>0.8</priority></url>
 </urlset>

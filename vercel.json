@@ -3,14 +3,20 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
-    { "source": "/founder", "destination": "/despre", "permanent": true },
-    { "source": "/film", "destination": "/despre#portofoliu", "permanent": true },
-    { "source": "/portofoliu", "destination": "/despre#portofoliu", "permanent": true },
-    { "source": "/curs", "destination": "/produse", "permanent": true },
-    { "source": "/travel", "destination": "/servicii#travel", "permanent": true },
-    { "source": "/en/founder", "destination": "/en/about", "permanent": true },
-    { "source": "/en/film", "destination": "/en/about#portfolio", "permanent": true },
-    { "source": "/en/portfolio", "destination": "/en/about#portfolio", "permanent": true }
+    { "source": "/despre", "destination": "/storyteller", "permanent": true },
+    { "source": "/founder", "destination": "/storyteller", "permanent": true },
+    { "source": "/servicii", "destination": "/studio", "permanent": true },
+    { "source": "/film", "destination": "/studio", "permanent": true },
+    { "source": "/portofoliu", "destination": "/studio", "permanent": true },
+    { "source": "/produse", "destination": "/shop", "permanent": true },
+    { "source": "/curs", "destination": "/shop", "permanent": true },
+    { "source": "/blog", "destination": "/journal", "permanent": true },
+    { "source": "/travel", "destination": "/journeys", "permanent": true },
+    { "source": "/en", "destination": "/", "permanent": true },
+    { "source": "/en/about", "destination": "/storyteller", "permanent": true },
+    { "source": "/en/services", "destination": "/studio", "permanent": true },
+    { "source": "/en/film", "destination": "/studio", "permanent": true },
+    { "source": "/en/contact", "destination": "/contact", "permanent": true }
   ],
   "headers": [
     {
