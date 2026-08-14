@@ -6,20 +6,21 @@
    ============================================================ */
 
 :root {
-  --ink:        #050505;   /* space black */
-  --ink-2:      #000000;
-  --violet:     #FFB30F;   /* accent — olive green (fundal butoane) */
-  --violet-2:   #FFC845;   /* accent deschis (text/linkuri pe fundal inchis) */
-  --violet-soft:rgba(255,255,255,0.035); /* panel subtil */
-  --gold:       #FFB30F;   /* accent olive */
-  --gold-soft:  rgba(255,179,15,0.22);     /* olive soft */
-  --cream:      #F5F1E3;
-  --sand:       #DDDBCB;
-  --text:       #ECEADD;   /* off-white cream — text principal */
-  --mute:       #A7A492;   /* cream-gray muted */
-  --line:       rgba(255,255,255,0.12);
-  --bg:         #050505;
-  --card:       rgba(255,255,255,0.045);
+  --ink:        #0A1F18;   /* deep emerald-espresso */
+  --ink-2:      #05130E;
+  --violet:     #C4A260;   /* accent — champagne gold */
+  --violet-2:   #D8BC82;   /* accent deschis (text/linkuri pe fundal inchis) */
+  --violet-soft:rgba(241,233,216,0.045); /* panel subtil */
+  --gold:       #C4A260;   /* champagne gold */
+  --gold-soft:  rgba(196,162,96,0.16);   /* gold soft */
+  --merlot:     #4D141D;   /* accent secundar */
+  --cream:      #F1E9D8;   /* bone */
+  --sand:       #DDD6C2;
+  --text:       #F1E9D8;   /* bone — text principal */
+  --mute:       #A6A08C;   /* muted bone */
+  --line:       rgba(196,162,96,0.22); /* hairline auriu */
+  --bg:         #0A1F18;
+  --card:       rgba(241,233,216,0.04);
   --radius:     16px;
   --maxw:       1120px;
   --maxw-text:  760px;
@@ -34,9 +35,9 @@ html {
   scroll-behavior: smooth;
   min-height: 100%;
   background:
-    radial-gradient(1200px 900px at 78% -8%, #2a1250 0%, transparent 58%),
-    radial-gradient(1000px 800px at 8% 108%, #1c0d38 0%, transparent 58%),
-    linear-gradient(180deg, #150a2c 0%, #0c0619 55%, #060310 100%);
+    radial-gradient(1200px 900px at 80% -10%, #124434 0%, transparent 60%),
+    radial-gradient(1000px 800px at 5% 108%, #0c3527 0%, transparent 60%),
+    linear-gradient(180deg, #0c2c22 0%, #0a2419 45%, #061710 100%);
   background-attachment: fixed;
 }
 body {
@@ -49,54 +50,19 @@ body {
   position: relative;
 }
 
-/* ---------- Fundal galaxie animată (continuu pe toate paginile) ---------- */
-body::before, body::after {
-  content: ""; position: fixed; inset: 0; pointer-events: none;
-}
-/* nebuloase mov + teal (drift lent) */
+/* ---------- Fundal luxury: emerald + glow + rama aurie ---------- */
 body::before {
-  z-index: -2;
+  content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
   background:
-    radial-gradient(55% 45% at 18% 20%, rgba(138,66,214,0.32), transparent 62%),
-    radial-gradient(50% 42% at 84% 14%, rgba(255,179,15,0.34), transparent 62%),
-    radial-gradient(55% 50% at 72% 82%, rgba(104,56,182,0.28), transparent 62%),
-    radial-gradient(50% 48% at 26% 84%, rgba(255,179,15,0.24), transparent 62%);
-  animation: nebula 50s ease-in-out infinite alternate;
+    radial-gradient(75% 55% at 50% -8%, rgba(196,162,96,0.10), transparent 60%),
+    radial-gradient(60% 55% at 85% 18%, rgba(18,68,52,0.55), transparent 62%),
+    radial-gradient(55% 55% at 10% 96%, rgba(12,53,39,0.45), transparent 62%);
 }
-/* câmp dens de stele (drift continuu în sus) */
 body::after {
-  z-index: -1;
-  background-image:
-    radial-gradient(1.5px 1.5px at 25px 35px, #ffffff, transparent),
-    radial-gradient(1px 1px at 75px 90px, #ffffff, transparent),
-    radial-gradient(1px 1px at 130px 50px, #ffffff, transparent),
-    radial-gradient(2px 2px at 175px 140px, #ffffff, transparent),
-    radial-gradient(1px 1px at 220px 70px, #ffcf7a, transparent),
-    radial-gradient(1px 1px at 270px 185px, #ffffff, transparent),
-    radial-gradient(1.5px 1.5px at 60px 205px, #ffffff, transparent),
-    radial-gradient(1px 1px at 110px 260px, #ffffff, transparent),
-    radial-gradient(1px 1px at 205px 240px, #ffffff, transparent),
-    radial-gradient(1px 1px at 285px 285px, #ffffff, transparent),
-    radial-gradient(1px 1px at 20px 150px, #ffffff, transparent),
-    radial-gradient(1.5px 1.5px at 155px 210px, #c8b9ff, transparent),
-    radial-gradient(1px 1px at 245px 30px, #ffffff, transparent),
-    radial-gradient(1px 1px at 95px 25px, #ffffff, transparent),
-    radial-gradient(2px 2px at 40px 120px, #ffffff, transparent),
-    radial-gradient(1px 1px at 300px 120px, #ffffff, transparent);
-  background-repeat: repeat;
-  background-size: 300px 300px;
-  animation: stars 160s linear infinite;
-  opacity: .95;
+  content: ""; position: fixed; inset: 16px; z-index: 200; pointer-events: none;
+  border: 1px solid rgba(196,162,96,0.30); border-radius: 4px;
 }
-@keyframes stars { from { background-position: 0 0; } to { background-position: 0 -300px; } }
-@keyframes nebula {
-  0%   { transform: translateY(0) scale(1);      opacity: .9; }
-  100% { transform: translateY(-2%) scale(1.06);  opacity: 1; }
-}
-@media (prefers-reduced-motion: reduce) {
-  body::before, body::after { animation: none; }
-}
-
+@media (max-width: 720px) { body::after { inset: 9px; } }
 .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 22px; }
 .narrow { max-width: var(--maxw-text); }
 
@@ -136,9 +102,9 @@ body::after {
   transition: transform .15s, box-shadow .2s, background .2s, color .2s; border: 1px solid transparent;
 }
 .btn:hover { transform: translateY(-2px); }
-.btn-primary { background: var(--violet); color: #050505; box-shadow: 0 10px 30px rgba(255,179,15,.30); }
+.btn-primary { background: var(--violet); color: #050505; box-shadow: 0 10px 30px rgba(196,162,96,.30); }
 .btn-primary:hover { background: var(--violet-2); }
-.btn-gold { background: var(--violet); color: #050505; box-shadow: 0 10px 30px rgba(255,179,15,.30); }
+.btn-gold { background: var(--violet); color: #050505; box-shadow: 0 10px 30px rgba(196,162,96,.30); }
 .btn-gold:hover { background: var(--violet-2); }
 .btn-ghost { border-color: rgba(255,255,255,.28); color: var(--text); }
 .btn-ghost:hover { background: rgba(255,255,255,.07); }
@@ -185,7 +151,7 @@ h3 { font-size: 1.35rem; margin-bottom: .4rem; }
   padding: 1.9rem 1.7rem; transition: transform .2s, box-shadow .2s, border-color .2s, background .2s;
   backdrop-filter: blur(4px);
 }
-.card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: rgba(255,179,15,.45); background: rgba(255,255,255,.06); }
+.card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: rgba(196,162,96,.45); background: rgba(255,255,255,.06); }
 .card .num { font-weight: 700; color: var(--violet-2); font-size: .95rem; letter-spacing: .08em; }
 .card .icon { font-size: 1.7rem; color: var(--violet-2); }
 .card h3 { margin-top: .7rem; }
@@ -291,3 +257,11 @@ h3 { font-size: 1.35rem; margin-bottom: .4rem; }
   .nav-toggle { display: block; }
   .footer-grid { grid-template-columns: 1fr; }
 }
+
+@font-face {
+  font-family: "Androgy";
+  src: url("/assets/fonts/androgy.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+.logo-word { font-family: "Androgy", var(--font-head); font-size: 1.7rem; letter-spacing: .12em; color: var(--cream); font-weight: 400; line-height: 1; }
+.site-footer .logo-word { color: var(--cream); font-size: 1.9rem; }
