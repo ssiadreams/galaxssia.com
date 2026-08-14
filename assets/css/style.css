@@ -288,7 +288,7 @@ h3 { font-size: 1.35rem; margin-bottom: .4rem; }
 .door-note { margin: 0; font-size: .85rem; color: var(--mute); max-width: 26ch; }
 /* Home hero centrat */
 .hero-center .hero-inner { text-align: center; }
-.hero-center h1.hero-statement, .hero-center .sub, .hero-center .eyebrow { margin-left: auto; margin-right: auto; }
+.hero-center h1, .hero-center .sub, .hero-center .eyebrow { margin-left: auto; margin-right: auto; }
 .hero-center .hero-doors { justify-content: center; }
 .hero-center .door { align-items: center; }
 .hero-center .door-note { text-align: center; }
