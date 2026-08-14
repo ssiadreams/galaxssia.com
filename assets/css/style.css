@@ -1,6 +1,6 @@
 /* ============================================================
    GALAXSSIA — Design System · Cosmic (dark)
-   Accent teal #1B9AAA · space black #050505 · cream #F5F1E3
+   Accent amber #FFB30F · space black #050505 · cream #F5F1E3
    Titluri Cormorant Garamond · text Helvetica
    Fundal: galaxie animată continuă (body::before / ::after)
    ============================================================ */
@@ -8,11 +8,11 @@
 :root {
   --ink:        #050505;   /* space black */
   --ink-2:      #000000;
-  --violet:     #41521F;   /* accent — olive green (fundal butoane) */
-  --violet-2:   #9db861;   /* accent deschis (text/linkuri pe fundal inchis) */
+  --violet:     #FFB30F;   /* accent — olive green (fundal butoane) */
+  --violet-2:   #FFC845;   /* accent deschis (text/linkuri pe fundal inchis) */
   --violet-soft:rgba(255,255,255,0.035); /* panel subtil */
-  --gold:       #41521F;   /* accent olive */
-  --gold-soft:  rgba(65,82,31,0.22);     /* olive soft */
+  --gold:       #FFB30F;   /* accent olive */
+  --gold-soft:  rgba(255,179,15,0.22);     /* olive soft */
   --cream:      #F5F1E3;
   --sand:       #DDDBCB;
   --text:       #ECEADD;   /* off-white cream — text principal */
@@ -58,9 +58,9 @@ body::before {
   z-index: -2;
   background:
     radial-gradient(55% 45% at 18% 20%, rgba(138,66,214,0.32), transparent 62%),
-    radial-gradient(50% 42% at 84% 14%, rgba(65,82,31,0.34), transparent 62%),
+    radial-gradient(50% 42% at 84% 14%, rgba(255,179,15,0.34), transparent 62%),
     radial-gradient(55% 50% at 72% 82%, rgba(104,56,182,0.28), transparent 62%),
-    radial-gradient(50% 48% at 26% 84%, rgba(65,82,31,0.24), transparent 62%);
+    radial-gradient(50% 48% at 26% 84%, rgba(255,179,15,0.24), transparent 62%);
   animation: nebula 50s ease-in-out infinite alternate;
 }
 /* câmp dens de stele (drift continuu în sus) */
@@ -71,7 +71,7 @@ body::after {
     radial-gradient(1px 1px at 75px 90px, #ffffff, transparent),
     radial-gradient(1px 1px at 130px 50px, #ffffff, transparent),
     radial-gradient(2px 2px at 175px 140px, #ffffff, transparent),
-    radial-gradient(1px 1px at 220px 70px, #b9c98f, transparent),
+    radial-gradient(1px 1px at 220px 70px, #ffcf7a, transparent),
     radial-gradient(1px 1px at 270px 185px, #ffffff, transparent),
     radial-gradient(1.5px 1.5px at 60px 205px, #ffffff, transparent),
     radial-gradient(1px 1px at 110px 260px, #ffffff, transparent),
@@ -122,7 +122,7 @@ body::after {
 }
 .main-nav a:hover, .main-nav a[aria-current="page"] { color: var(--text); }
 .nav-cta {
-  background: var(--violet); color: #ffffff !important; padding: .5rem 1.1rem !important;
+  background: var(--violet); color: #050505 !important; padding: .5rem 1.1rem !important;
   border-radius: 999px; font-weight: 700 !important;
 }
 .nav-cta:hover { background: var(--violet-2); }
@@ -136,9 +136,9 @@ body::after {
   transition: transform .15s, box-shadow .2s, background .2s, color .2s; border: 1px solid transparent;
 }
 .btn:hover { transform: translateY(-2px); }
-.btn-primary { background: var(--violet); color: #ffffff; box-shadow: 0 10px 30px rgba(65,82,31,.30); }
+.btn-primary { background: var(--violet); color: #050505; box-shadow: 0 10px 30px rgba(255,179,15,.30); }
 .btn-primary:hover { background: var(--violet-2); }
-.btn-gold { background: var(--violet); color: #ffffff; box-shadow: 0 10px 30px rgba(65,82,31,.30); }
+.btn-gold { background: var(--violet); color: #050505; box-shadow: 0 10px 30px rgba(255,179,15,.30); }
 .btn-gold:hover { background: var(--violet-2); }
 .btn-ghost { border-color: rgba(255,255,255,.28); color: var(--text); }
 .btn-ghost:hover { background: rgba(255,255,255,.07); }
@@ -185,7 +185,7 @@ h3 { font-size: 1.35rem; margin-bottom: .4rem; }
   padding: 1.9rem 1.7rem; transition: transform .2s, box-shadow .2s, border-color .2s, background .2s;
   backdrop-filter: blur(4px);
 }
-.card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: rgba(65,82,31,.45); background: rgba(255,255,255,.06); }
+.card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: rgba(255,179,15,.45); background: rgba(255,255,255,.06); }
 .card .num { font-weight: 700; color: var(--violet-2); font-size: .95rem; letter-spacing: .08em; }
 .card .icon { font-size: 1.7rem; color: var(--violet-2); }
 .card h3 { margin-top: .7rem; }
@@ -196,7 +196,7 @@ h3 { font-size: 1.35rem; margin-bottom: .4rem; }
 .price-card.featured { border-color: var(--violet); box-shadow: var(--shadow); position: relative; }
 .price-card.featured::before {
   content: "Most chosen"; position: absolute; top: -12px; left: 1.7rem;
-  background: var(--violet); color: #ffffff; font-size: .72rem; font-weight: 700;
+  background: var(--violet); color: #050505; font-size: .72rem; font-weight: 700;
   padding: .25rem .7rem; border-radius: 999px; letter-spacing: .04em;
 }
 .price { font-size: 2rem; font-weight: 700; color: #fff; margin: .6rem 0; font-family: var(--font-head); }
@@ -235,7 +235,7 @@ h3 { font-size: 1.35rem; margin-bottom: .4rem; }
 /* steps */
 .steps { display: grid; gap: 1rem; }
 .step { display: flex; gap: 1rem; align-items: flex-start; }
-.step .no { flex: none; width: 34px; height: 34px; border-radius: 10px; background: var(--violet); color: #ffffff; font-weight: 700; display: grid; place-items: center; }
+.step .no { flex: none; width: 34px; height: 34px; border-radius: 10px; background: var(--violet); color: #050505; font-weight: 700; display: grid; place-items: center; }
 
 /* forms */
 .form { display: grid; gap: 1rem; max-width: 520px; }
