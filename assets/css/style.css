@@ -58,9 +58,9 @@ body::before {
   z-index: -2;
   background:
     radial-gradient(55% 45% at 18% 20%, rgba(138,66,214,0.32), transparent 62%),
-    radial-gradient(50% 42% at 84% 14%, rgba(27,154,170,0.22), transparent 62%),
+    radial-gradient(50% 42% at 84% 14%, rgba(65,82,31,0.34), transparent 62%),
     radial-gradient(55% 50% at 72% 82%, rgba(104,56,182,0.28), transparent 62%),
-    radial-gradient(50% 48% at 26% 84%, rgba(60,30,110,0.30), transparent 62%);
+    radial-gradient(50% 48% at 26% 84%, rgba(65,82,31,0.24), transparent 62%);
   animation: nebula 50s ease-in-out infinite alternate;
 }
 /* câmp dens de stele (drift continuu în sus) */
@@ -68,13 +68,13 @@ body::after {
   z-index: -1;
   background-image:
     radial-gradient(1.5px 1.5px at 25px 35px, #ffffff, transparent),
-    radial-gradient(1px 1px at 75px 90px, #d5f2f6, transparent),
+    radial-gradient(1px 1px at 75px 90px, #ffffff, transparent),
     radial-gradient(1px 1px at 130px 50px, #ffffff, transparent),
     radial-gradient(2px 2px at 175px 140px, #ffffff, transparent),
-    radial-gradient(1px 1px at 220px 70px, #9fe0e8, transparent),
+    radial-gradient(1px 1px at 220px 70px, #b9c98f, transparent),
     radial-gradient(1px 1px at 270px 185px, #ffffff, transparent),
     radial-gradient(1.5px 1.5px at 60px 205px, #ffffff, transparent),
-    radial-gradient(1px 1px at 110px 260px, #d5f2f6, transparent),
+    radial-gradient(1px 1px at 110px 260px, #ffffff, transparent),
     radial-gradient(1px 1px at 205px 240px, #ffffff, transparent),
     radial-gradient(1px 1px at 285px 285px, #ffffff, transparent),
     radial-gradient(1px 1px at 20px 150px, #ffffff, transparent),
