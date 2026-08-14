@@ -281,3 +281,8 @@ h3 { font-size: 1.35rem; margin-bottom: .4rem; }
   .who-grid { grid-template-columns: 1fr; gap: 1.6rem; }
   .who-grid .portrait { max-width: 180px; }
 }
+/* Home hero — statement + two doors */
+.hero h1.hero-statement { font-size: clamp(1.85rem, 4.2vw, 3.05rem); line-height: 1.22; max-width: 26ch; }
+.hero-doors { display: flex; gap: 2.2rem; flex-wrap: wrap; margin-top: 2.4rem; }
+.door { display: flex; flex-direction: column; align-items: flex-start; gap: .6rem; }
+.door-note { margin: 0; font-size: .85rem; color: var(--mute); max-width: 26ch; }
