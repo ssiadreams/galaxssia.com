@@ -267,10 +267,10 @@ h3 { font-size: 1.35rem; margin-bottom: .4rem; }
 .site-footer .logo-word { color: var(--cream); font-size: 1.9rem; }
 /* portret mic in scrisoarea About */
 .about-portrait {
-  float: left; width: 200px; aspect-ratio: 4/5; object-fit: cover;
+  float: left; width: 150px; aspect-ratio: 4/5; object-fit: cover;
   border-radius: 12px; margin: .35rem 1.6rem 1rem 0; border: 1px solid var(--line);
   box-shadow: var(--shadow);
 }
 @media (max-width: 560px) {
-  .about-portrait { float: none; display: block; width: 150px; margin: 0 0 1.2rem; }
+  .about-portrait { float: none; display: block; width: 120px; margin: 0 0 1.2rem; }
 }
