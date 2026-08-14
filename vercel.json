@@ -16,7 +16,9 @@
     { "source": "/en/about", "destination": "/storyteller", "permanent": true },
     { "source": "/en/services", "destination": "/studio", "permanent": true },
     { "source": "/en/film", "destination": "/studio", "permanent": true },
-    { "source": "/en/contact", "destination": "/contact", "permanent": true }
+    { "source": "/en/contact", "destination": "/contact", "permanent": true },
+    { "source": "/storyteller", "destination": "/studio", "permanent": true },
+    { "source": "/journal", "destination": "/blog", "permanent": true }
   ],
   "headers": [
     {
