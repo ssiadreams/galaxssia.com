@@ -274,3 +274,10 @@ h3 { font-size: 1.35rem; margin-bottom: .4rem; }
 @media (max-width: 560px) {
   .about-portrait { float: none; display: block; width: 120px; margin: 0 0 1.2rem; }
 }
+/* Who is Alessia — poza + bio */
+.who-grid { display: grid; grid-template-columns: 240px 1fr; gap: 2.6rem; align-items: start; }
+.who-grid .portrait { width: 100%; max-width: 240px; aspect-ratio: 4/5; }
+@media (max-width: 700px) {
+  .who-grid { grid-template-columns: 1fr; gap: 1.6rem; }
+  .who-grid .portrait { max-width: 180px; }
+}
