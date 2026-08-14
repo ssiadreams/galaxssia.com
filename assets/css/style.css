@@ -88,10 +88,10 @@ body::after {
 }
 .main-nav a:hover, .main-nav a[aria-current="page"] { color: var(--text); }
 .nav-cta {
-  background: var(--violet); color: #050505 !important; padding: .5rem 1.1rem !important;
-  border-radius: 999px; font-weight: 700 !important;
+  color: var(--violet-2) !important; background: transparent; padding: 0 !important;
+  border-radius: 0; font-weight: 500 !important;
 }
-.nav-cta:hover { background: var(--violet-2); }
+.nav-cta:hover { background: transparent; color: var(--cream) !important; }
 .nav-toggle { display: none; background: none; border: 0; cursor: pointer; padding: 8px; }
 .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--text); margin: 5px 0; transition: .2s; }
 
